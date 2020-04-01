@@ -6,17 +6,59 @@
     <title>Forms and Input</title>
 </head>
 <body>
-    <input type="text" name="userName" placeholder="name"/> <br/>
-    <input type="password" name="userPassword" placeholder="password"/><br/>
-    <select name="gender">
-        <option value="NA" disabled="disabled" selected="selected">Select Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select><br/>
-    <textarea name="biography" placeholder="Biography" rows="10" cols="60"></textarea><br/>
+    <a id="top">
+        <strong>
+            <u>Top of Page</u>
+        </strong>
+    </a>
+    <br/>
+    <p>
+        input fields: <br>
+        <input type="text" name="userName" placeholder="name"/> <br/>
+        <input type="password" name="userPassword" placeholder="password"/><br/>
+    </p>
+    <p>
+        dropdown selection: <br>
+        <select name="gender">
+            <option value="NA" disabled="disabled" selected="selected">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br/>
+    </p>
+    <p>
+        text area: <br>
+        <textarea name="biography" placeholder="Biography" rows="10" cols="60"></textarea><br/>
+    </p>
     <!-- next is the RADIO button, notice that the TYPE and NAME are all the same, this is important -->
-    1<input type="radio" name="radio" id="rd1" value="rd1">
-    2<input type="radio" name="radio" id="rd2" value="rd2">
-    3<input type="radio" name="radio" id="rd3" value="rd3">
+    <p>
+        radio buttons: <br/>
+        1<input type="radio" name="radio" id="rd1" value="rd1">
+        2<input type="radio" name="radio" id="rd2" value="rd2">
+        3<input type="radio" name="radio" id="rd3" value="rd3"><br/>
+    </p>
+    <!-- checkboxes: like radio buttins except you can check as many as you want -->
+    <p>
+        checkboxes: <br>
+        <input type="checkbox" name="checkbox" id="cb1">
+        <input type="checkbox" name="checkbox" id="cb2">
+        <input type="checkbox" name="checkbox" id="cb3" checked="checked">
+        <br>
+    </p>
+    <!-- let's go over BUTTONS and their different types -->
+    <p>
+        Buttons: <br>
+        <input type="button" value="Push Me"/><br>
+        <button type="button">No, ME!</button><br>
+        Reset: <br>
+        <input type="reset" value="Reset-Button"/><br>
+        <button type="reset">Press to Reset</button><br>
+        Submit: <br>
+        <input type="submit" value="Submit"/><br>
+        <button type="submit">SUBMIT</button><br>
+    </p>
+    
+   
+    <a href="#top">go to top of page!</a>
+
 </body>
 </html>
