@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function counter() {
+         if(typeof(Storage) !== "undefined") {
+             if(sessionStorage.counter) {
+                sessionStorage.counter = Number(sessionStorage.counter) + 1;
+            } else {
+                sessionStorage.counter = 1;           
+            }
+            document.getElementById("number").innerHTML = sessionStorage.counter;
+            if(sessionStorage.counter > 1) {
+                document.getElementById("number").innerHTML += "<p>Refresh the page</p>";
+            }
+         } else {
+             document.getElementById("number").innerHTML = "Sorry, your browser does not support web storage"
+         }
+            
+ 
+        }
+     </script>
+</head>
+<body>
+   <button onclick="counter()" type="button">Add another one!</button> 
+   <div id="number"></div>
+</body>
+</html>

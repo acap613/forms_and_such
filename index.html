@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="learn, html, html5, css, css3, javascript, jquery, php" >
-    <meta http-equiv="refresh" content="5; URL=pic.html">
+    <!-- <meta http-equiv="refresh" content="5; URL=pic.html"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <title>Forms and Input</title>
@@ -16,6 +16,26 @@
         </strong>
     </a>
     <br/>
+    <video id="testVid" controls="controls" width="200">
+        <source src="pepper.mp4" type="video/mp4">
+    </video><br>
+    <button onclick="playOrPause()">Play or Pause</button>
+    <button onclick="fullScreen()">Large</button>
+    <button onclick="midScreen()">Regular</button>
+    <button onclick="minScreen()">Minimize</button><br>
+    <br>
+    <audio controls="controls">
+        <source src="zelda-lullaby.mp3" type="audio/mp3">
+    </audio><br>
+    <br>
+    <img src="16_bitZelda.jpg" id="dragMe" draggable="true" ondragstart="drag(event)" title="click and hold to drag"><br>
+    <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)" title="drag Zelda here"></div>
+    <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)" title="you can also drag her here!"></div><br>
+
+    <!-- geocoords -->
+    
+    <button onclick="getPos()">Press to Find Me!</button><br>
+    <p id="coords"></p>
     <p>
         input fields: <br>
         <input type="text" name="userName" placeholder="name"/> <br/>
@@ -71,9 +91,18 @@
     </form><br>
 
     <iframe src="https://www.zelda.com/" width="70%" height="300px" frameborder="1" scrolling="auto"></iframe><br>
+    <div id="div1">
+        parent
+        <div id="div2">
+            child
+            <div id="div3">grandchild 1</div>
+            <div id="div3">grandchild 2</div>
+        </div>
+    </div>
+    
     
    
     <a href="#top">go to top of page!</a>
-
+    <script src="scripts/index.js" type="text/javascript"></script>
 </body>
 </html>
