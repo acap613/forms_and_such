@@ -2,3 +2,13 @@ body {
     background-color: black;
     color: white;
 }
+
+.test {
+    padding: 20px;
+    font-style: italic;
+}
+
+#test {
+    font-size: 40px;
+    color: darkcyan;
+}
